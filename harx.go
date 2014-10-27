@@ -155,7 +155,7 @@ var list bool = false
 
 var extract bool = false
 var extractIndex int = -1
-var dumpDirectly bool = true
+var dumpDirectly bool = false
 
 var extractPattern bool = false
 var urlPattern *regexp.Regexp = nil
@@ -169,6 +169,7 @@ func main() {
 		fmt.Println(`
 usage: harx [options] har-file
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
     -l                  List files , lead by [index]
@@ -178,6 +179,8 @@ usage: harx [options] har-file
     -u urlPattern dir   like -a , but filter with urlPattern
 =======
 >>>>>>> fe779a5d6f8b43ed67daa0afe00344d6833f3e5f
+=======
+>>>>>>> 6567d2532297ec0c71d617e9ec045735322a1e83
     -l                        List files , lead by [index]
     -lu urlPattern            like -l , but filter with urlPattern
     -lm mimetypePattern       like -l , but filter with response mimetype
@@ -187,9 +190,12 @@ usage: harx [options] har-file
     -m mimetypePattern dir    like -a , but filter with mimetypePattern
     -md mimetypePattern dir   like -m , but dump contents directly to [dir]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 52a186a... Added -lm, -m, and -md switches for file filtering by mimetype
 >>>>>>> fe779a5d6f8b43ed67daa0afe00344d6833f3e5f
+=======
+>>>>>>> 6567d2532297ec0c71d617e9ec045735322a1e83
 
         `)
 		return
